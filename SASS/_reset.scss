@@ -1,0 +1,36 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+   width: 100%; 
+   height: fit-content;
+}
+
+h1{
+    margin-bottom: 1.5rem;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    
+    li{
+        list-style: none;
+        display: inline;
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+

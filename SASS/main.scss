@@ -1,0 +1,100 @@
+@import "_reset.scss";
+
+$primary-clr: hsl(0, 0%, 63%);
+$secondary-clr: hsl(0, 0%, 27%);
+$extra-clr: rgb(245, 113, 65);
+
+body{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Spartan", sans-serif; 
+    color: $primary-clr;
+}
+
+h1,h2{
+    color: $secondary-clr;
+    font-size: 2rem;  
+    letter-spacing: -2px;
+    line-height: 1;
+    word-spacing: .2rem;
+    font-weight: 700;
+}
+  
+.desktop-img{
+    position: absolute;
+    width: 0;
+}
+
+@import "_navbar.scss";
+
+.aside, .section2{
+    padding: 3.5em 0;
+}
+
+.aside{
+    button{
+        border: none;
+        font-size: 18px;
+        font-weight: 600;
+        background: none;
+        letter-spacing: .35em;
+        text-transform: uppercase;
+        margin-top: 1.2em;
+        cursor: pointer;
+       
+        &::after{
+            content: url("../images/icon-arrow.svg");
+            margin-left: 1em;
+        }
+        &:hover{
+            background: $extra-clr;
+            border: .5px solid $primary-clr;
+            border-radius: 30px;
+            color: #fff;
+            padding: .35em .8em .2em;
+        }
+    }
+   
+}
+
+.hero{
+    position: relative;
+}
+
+.slide-control1,
+.slide-control2{
+    background: #000;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    padding: 2em;
+   
+    a{
+        margin: 0 1.8em;
+    }
+
+    &:hover{
+        background: #5a5555;
+    }
+}
+
+.slide-control1{
+    right: 4em;
+}
+.slide-control2{
+    right: 0;
+}
+
+.carousel-control-next-icon, 
+.carousel-control-prev-icon{
+    padding: 0 1em;
+}
+
+@media(min-width: 700px){
+    .slide-control1,
+    .slide-control2{
+        padding: 2.5em;
+    }
+}
+
+@import "_responsive.scss";
