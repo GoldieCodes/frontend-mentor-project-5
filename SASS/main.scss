@@ -31,11 +31,17 @@ h1,h2{
     padding: 3.5em 0;
 }
 
+.section2{
+    h2{
+        text-transform: uppercase;
+    }
+}
+
 .aside{
     button{
         border: none;
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 500;
         background: none;
         letter-spacing: .35em;
         text-transform: uppercase;
